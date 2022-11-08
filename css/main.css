@@ -363,10 +363,18 @@ body {
   left: calc(50% - 130px / 2);
   bottom: 94px;
   display: block;
+  visibility: hidden;
+  opacity: 0;
+
   width: 130px;
   height: 112px;
   background: url("../images/bg_common.png") no-repeat;
   background-position: 0 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.business-list > li > a:hover::after {
+  visibility: visible;
+  opacity: 1;
 }
 .business-list > li:nth-child(1) > a::after {
   background-position: -165px 0px;
