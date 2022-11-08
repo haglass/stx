@@ -548,6 +548,7 @@ body {
   padding-left: 100px;
   padding-bottom: 70px;
 }
+
 .about-top > p::before {
   content: "";
   position: absolute;
@@ -595,16 +596,18 @@ body {
   background: url(../images/bg_icon.png) no-repeat;
   margin-bottom: 25px;
 }
-.about-inner > li:nth-child(1) > a::before {
+.about-list > li:nth-child(1) > a::before {
   background-position: 0 0;
 }
-.about-inner > li:nth-child(2) > a::before {
+.about-list > li:nth-child(2) > a::before {
   background-position: -110px 0;
 }
-.about-inner > li:nth-child(3) > a::before {
+.about-list > li:nth-child(3) > a::before {
   background-position: -220px 0;
 }
-
+.about-list > li:nth-child(2) {
+  margin: 0px 200px;
+}
 /* 푸터 */
 .footer {
   position: relative;
@@ -615,4 +618,35 @@ body {
 .footer-inner {
   position: relative;
   display: block;
+}
+.footer-logo {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 130px;
+}
+.footer-info {
+  position: relative;
+  display: block;
+  float: left;
+}
+.footer-list {
+  position: relative;
+  display: block;
+}
+.footer-list > li {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  color: #c3c3c3;
+  margin-bottom: 5px;
+}
+.footer-list > li > address {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+}
+..footer-list > li > i {
+  position: relative;
+  display: inline-block;
 }
