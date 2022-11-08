@@ -433,7 +433,7 @@ body {
   margin-bottom: 45px;
 }
 
-.news-list {
+.news-content {
   position: relative;
   display: block;
 }
@@ -463,15 +463,12 @@ body {
 .news-list > li > a::after {
   content: "";
   position: absolute;
-  right: 29;
+  right: 29px;
   top: 0;
   width: 48px;
   height: 23px;
   background: url("../images/bg_common.png") no-repeat;
   background-position: 0 -49px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 /* 고객센터 */
@@ -485,6 +482,37 @@ body {
   position: relative;
   display: block;
 }
+.cs-link {
+  position: relative;
+  display: block;
+  width: calc(50% - 1px);
+  height: 200px;
+  background: #ffffff;
+  padding: 50px 60px;
+}
+.cs-inner > .cs-link:first-child {
+  float: left;
+  background: #fff url("../images/bg_faq.png") no-repeat;
+  background-position: calc(100% - 50px) 50%;
+}
+.cs-inner > .cs-link:last-child {
+  float: right;
+  background: #fff url("../images/bg_custom.png") no-repeat;
+  background-position: calc(100% - 50px) 50%;
+}
+.cs-link h3 {
+  position: relative;
+  display: block;
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.cs-link p {
+  position: relative;
+  display: block;
+}
+
 /* 회사소개 */
 .about {
   position: relative;
